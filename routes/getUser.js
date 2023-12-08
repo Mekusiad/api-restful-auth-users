@@ -3,9 +3,9 @@ import { User } from "../models/User.js";
 
 import { login } from "../middleware/login.js";
 
-export const getUsers = express.Router();
+export const getUser = express.Router();
 
-getUsers.get("/:id", login, async (req, res, next) => {
+getUser.get("/:id", login, async (req, res, next) => {
   try {
     const _id = req.params.id;
     const { id } = User;

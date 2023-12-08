@@ -3,7 +3,7 @@ import morgan from "morgan";
 import bodyParser from "body-parser";
 import { signUp } from "./routes/signUp.js";
 import { signIn } from "./routes/signIn.js";
-import { getUsers } from "./routes/getUsers.js";
+import { getUser } from "./routes/getUser.js";
 
 export const app = express();
 
@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 
 app.use("/signUp", signUp);
 app.use("/signIn", signIn);
-app.use("/getUsers", getUsers);
+app.use("/getUser", getUser);
 
 // Quando não encontra uma rota, entra nessa condição.
 app.use((req, res, next) => {
