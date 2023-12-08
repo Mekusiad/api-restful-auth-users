@@ -18,25 +18,27 @@ Após isso, instale as dependênias
 - /signIn
 - /getUser
 
+### JavaScript
+
 Estrutura para /signUp
 
-"
+```javascript
 {
 "name":"name",
 "email": "name@name.com",
 "password":"password",
 "phone":{"number":"123456", "ddd":"91"}
 }
-$`
+```
 
 Estrutura para /signIn
 
-"
+```javascript
 {
  "email": "email@email.com",
  "password":"password",
 }
-"
+```
 
 ##### Banco de dados
 
