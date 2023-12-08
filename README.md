@@ -18,6 +18,26 @@ Após isso, instale as dependênias
 - /signIn
 - /getUser
 
+Estrutura para /signUp
+
+"
+{
+"name":"name",
+"email": "name@name.com",
+"password":"password",
+"phone":{"number":"123456", "ddd":"91"}
+}
+$`
+
+Estrutura para /signIn
+
+"
+{
+ "email": "email@email.com",
+ "password":"password",
+}
+"
+
 ##### Banco de dados
 
 - Foi utilizado o mongoDB para guardar usuários
