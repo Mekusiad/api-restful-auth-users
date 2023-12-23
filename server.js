@@ -12,7 +12,8 @@ const uri = `mongodb+srv://${process.env.DATABASE_LOGIN}:${process.env.DATABASE_
 mongoose
   .connect(uri)
   .then(() => {
-    console.log("Conectado ao mongoose");
+    console.log(`Servidor conectado na porta ${port}.`);
+    console.log("Conectado ao mongoose...");
     server.listen(port);
   })
   .catch((error) => {
